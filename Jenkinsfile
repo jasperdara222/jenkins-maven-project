@@ -15,7 +15,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'mvn -f hello-app/pom.xml test'
-                echo "Finish test file"
+                echo "Finish test file and removed some bugs"
             }
             post {
                 always {
